@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lux Tradita</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #faf9f7;
+    --text: #2b2825;
+    --muted: #6b6660;
+    --accent: #8a6d3b;
+    --border: #e4dfd8;
+    --card-bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171512;
+      --text: #eae6df;
+      --muted: #a39d93;
+      --accent: #c9a86a;
+      --border: #322d27;
+      --card-bg: #1f1c19;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  a { color: var(--accent); }
+  .logo {
+    width: 68px;
+    height: auto;
+    display: block;
+    margin: 0 0 1.75rem;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem 4rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.25rem;
+  }
+  .tagline {
+    color: var(--accent);
+    font-style: italic;
+    font-size: 1.05rem;
+    margin: 0 0 2.5rem;
+  }
+  p {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin: 0 0 1.4rem;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 3rem 0 2.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+  input, textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 0.8rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  button {
+    align-self: flex-start;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  footer {
+    margin-top: 4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="logo" src="lux-tradita-mark.png" alt="Lux Tradita">
+    <h1>Lux Tradita</h1>
+    <p class="tagline">Knowledge, carried forward.</p>
+
+    <p>
+      Lux Tradita develops intelligent software for interpretation, analysis and
+      decision support. We combine established bodies of knowledge, authoritative
+      source material and accurately calculated data with modern AI, computational
+      methods and purposeful design.
+    </p>
+    <p>
+      Our products operate across distinct fields, but follow the same principles:
+      reliable foundations, rigorous analysis and clear, useful results. We develop
+      independent applications as well as tools for specialist, professional and
+      organisational use.
+    </p>
+
+    <hr class="divider">
+
+    <h2>Contact</h2>
+    <p>
+      For product enquiries, partnerships, licensing or development opportunities,
+      email <a href="mailto:info@luxtradita.com">info@luxtradita.com</a> or use the form below.
+    </p>
+    <form action="https://formsubmit.co/info@luxtradita.com" method="POST">
+      <input type="hidden" name="_subject" value="New enquiry from luxtradita.com">
+      <input type="hidden" name="_next" value="https://luxtradita.com/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+      <div class="hp-field" aria-hidden="true">
+        <label for="_honey">Leave this field blank</label>
+        <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      &copy; 2026 Lux Tradita &middot; info@luxtradita.com
+    </footer>
+  </div>
+</body>
+</html>
