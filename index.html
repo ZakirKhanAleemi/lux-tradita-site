@@ -126,6 +126,14 @@
     font-size: 0.85rem;
     color: var(--muted);
   }
+  .contact-lines {
+    margin: 0 0 2rem;
+    line-height: 2;
+  }
+  .note {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
   .hp-field {
     position: absolute;
     left: -9999px;
@@ -157,11 +165,19 @@
     <h2>Contact</h2>
     <p>
       For product enquiries, partnerships, licensing or development opportunities,
-      email <a href="mailto:info@luxtradita.com">info@luxtradita.com</a> or use the form below.
+      email <a href="mailto:info@luxtradita.com">info@luxtradita.com</a>,
+      message us on <a href="https://wa.me/61494633435">WhatsApp</a>, or use the form below.
+    </p>
+    <p class="contact-lines">
+      <a href="mailto:info@luxtradita.com">info@luxtradita.com</a><br>
+      <a href="tel:+61494633435">+61 494 633 435</a>
+      <span class="note">(WhatsApp)</span>
     </p>
     <form action="https://formsubmit.co/info@luxtradita.com" method="POST">
       <input type="hidden" name="_subject" value="New enquiry from luxtradita.com">
-      <input type="hidden" name="_next" value="https://luxtradita.com/thank-you.html">
+      <!-- WHEN luxtradita.com GOES LIVE: change the _next line below to
+           https://luxtradita.com/thank-you.html -->
+      <input type="hidden" name="_next" value="https://zakirkhanaleemi.github.io/lux-tradita-site/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
       <div class="hp-field" aria-hidden="true">
         <label for="_honey">Leave this field blank</label>
@@ -183,7 +199,7 @@
     </form>
 
     <footer>
-      &copy; 2026 Lux Tradita &middot; info@luxtradita.com
+      &copy; 2026 Lux Tradita &middot; info@luxtradita.com &middot; +61 494 633 435
     </footer>
   </div>
 </body>
