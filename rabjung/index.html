@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Rabjung · Lux Tradita</title>
+<meta name="description" content="Rabjung — Tibetan Astrology. Free on Google Play: scan the code or tap to install. 7-day free trial, then $3.99/month.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="Get Rabjung — Tibetan Astrology">
+<meta property="og:description" content="Free on Google Play. Scan the code or tap to install. 7-day free trial, then $3.99/month.">
+<meta property="og:url" content="https://luxtradita.com/rabjung/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --accent:#CF5A3C;
+    --bg:#F3EEE2; --surface:#FBF8F0; --border:#E3DAC6;
+    --text:#242138; --muted:#6E6A84; --hair:rgba(0,0,0,.10);
+    --shadow:0 1px 2px rgba(30,26,60,.05), 0 22px 50px -30px rgba(30,26,60,.45);
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --accent:#CF5A3C;
+      --bg:#0C0B16; --surface:#16142A; --border:#2A2647;
+      --text:#ECE7DA; --muted:#9C99B4; --hair:rgba(255,255,255,.08);
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 26px 60px -34px rgba(0,0,0,.8);
+    }
+  }
+  :root[data-theme="dark"]{
+    --accent:#CF5A3C;
+    --bg:#0C0B16; --surface:#16142A; --border:#2A2647;
+    --text:#ECE7DA; --muted:#9C99B4; --hair:rgba(255,255,255,.08);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 26px 60px -34px rgba(0,0,0,.8);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); line-height:1.55;
+    padding-block:0 52px; padding-inline:20px; -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; align-items:center; min-height:100vh;
+  }
+  .top{width:100%; max-width:520px; padding-block:18px 0}
+  .top a{
+    font-family:var(--sans); font-size:.8rem; font-weight:600; letter-spacing:.02em;
+    color:var(--muted); text-decoration:none; display:inline-flex; align-items:center; gap:.4em;
+  }
+  .top a:hover{color:var(--accent)}
+  main{
+    width:100%; max-width:520px; margin:auto; text-align:center;
+    padding-block:20px;
+  }
+  .emblem{
+    width:74px; height:74px; margin:0 auto; border-radius:20px;
+    background:var(--surface); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+    color:var(--accent); font-size:38px; line-height:1;
+    box-shadow:var(--shadow);
+  }
+  .kicker{
+    margin-top:22px; font-family:var(--sans); font-size:.76rem; font-weight:600;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--accent);
+  }
+  h1{
+    font-family:var(--serif); font-weight:400; font-optical-sizing:auto;
+    font-size:clamp(2.6rem,10vw,3.6rem); line-height:1; margin:.18em 0 0;
+    letter-spacing:-.01em;
+  }
+  .subtitle{
+    color:var(--muted); font-size:1rem; max-width:40ch; margin:14px auto 0; text-wrap:balance;
+  }
+  .qr-card{
+    margin:30px auto 0; background:var(--surface); border:1px solid var(--border);
+    border-radius:24px; padding:26px; box-shadow:var(--shadow); max-width:340px;
+  }
+  .qr-tile{
+    background:#FBF7EE; border-radius:14px; padding:16px; line-height:0;
+    box-shadow:inset 0 0 0 1px rgba(20,21,43,.06); width:216px; height:216px; margin:0 auto;
+  }
+  .qr-tile svg{display:block; width:100%; height:100%}
+  .scan{
+    margin:16px 0 0; font-size:.82rem; color:var(--muted);
+    display:flex; align-items:center; justify-content:center; gap:.45em;
+  }
+  .actions{margin-top:22px; display:flex; flex-direction:column; gap:11px; max-width:340px; margin-left:auto; margin-right:auto}
+  a.play{
+    display:flex; align-items:center; justify-content:center; gap:.7em;
+    background:#14152B; color:#fff; text-decoration:none;
+    border-radius:14px; padding:13px 18px; border:1px solid #14152B;
+    transition:filter .15s ease;
+  }
+  :root[data-theme="dark"] a.play,
+  :root:not([data-theme="light"]) a.play{background:#000; border-color:#2A2647}
+  a.play:hover{filter:brightness(1.12)}
+  a.play .pbadge{display:inline-flex}
+  a.play .lbl{text-align:left; line-height:1.05}
+  a.play .lbl small{display:block; font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; opacity:.75}
+  a.play .lbl b{font-family:var(--serif); font-weight:500; font-size:1.15rem; letter-spacing:.005em}
+  button.copy{
+    font-family:var(--sans); font-size:.9rem; font-weight:600; cursor:pointer;
+    background:transparent; color:var(--text); border:1px solid var(--border);
+    border-radius:14px; padding:12px 18px; display:flex; align-items:center; justify-content:center; gap:.5em;
+    transition:border-color .15s ease, color .15s ease;
+  }
+  button.copy:hover,button.copy.ok{border-color:var(--accent); color:var(--accent)}
+  .pkg{margin-top:16px; font-family:var(--mono); font-size:.74rem; color:var(--muted); word-break:break-all}
+  .terms{margin-top:6px; font-size:.82rem; color:var(--muted)}
+  .links{
+    margin-top:30px; padding-top:20px; border-top:1px solid var(--hair);
+    display:flex; flex-wrap:wrap; gap:.4em 1.2em; justify-content:center;
+    font-size:.85rem;
+  }
+  .links a{color:var(--muted); text-decoration:none; font-weight:500}
+  .links a:hover{color:var(--accent)}
+  .foot{margin-top:26px; font-size:.78rem; color:var(--muted); text-align:center}
+  .foot b{color:var(--text); font-weight:600}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:8px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media print{
+    body{background:#fff; color:#111}
+    .top,.actions,.links,.copy{display:none}
+    .qr-card{box-shadow:none; border-color:#ccc}
+  }
+</style>
+</head>
+<body>
+  <div class="top"><a href="/">← Lux Tradita</a></div>
+  <main>
+    <div class="emblem">☸</div>
+    <p class="kicker">Tibetan Astrology</p>
+    <h1>Rabjung</h1>
+    <p class="subtitle">The Rabjung cycle — the elements and animals of the Tibetan almanac, kept for your day.</p>
+
+    <div class="qr-card">
+      <div class="qr-tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h7m3 0h1m1 0h2m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h2m1 0h2m1 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h5m1 0h5m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h2m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m3 0h6m3 0h1m1 0h1m2 0h3m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m1 0h1m1 0h4m1 0h2m1 0h2m2 0h1m1 0h3m-29 1h1m1 0h2m1 0h3m3 0h4m1 0h1m2 0h2m2 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-35 1h1m1 0h1m4 0h1m1 0h7m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m-36 1h2m1 0h2m1 0h1m3 0h1m4 0h1m2 0h1m3 0h2m1 0h1m3 0h1m2 0h1m-33 1h2m1 0h2m4 0h7m2 0h2m2 0h1m1 0h3m5 0h1m1 0h1m-30 1h3m4 0h2m2 0h2m2 0h1m1 0h1m1 0h4m1 0h4m1 0h3m-36 1h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m2 0h1m6 0h8m1 0h2m-37 1h5m1 0h1m3 0h1m1 0h1m3 0h4m2 0h1m1 0h2m3 0h1m2 0h1m1 0h2m-35 1h1m2 0h2m2 0h11m2 0h2m3 0h1m1 0h5m2 0h2m-33 1h5m1 0h4m1 0h4m1 0h1m3 0h3m6 0h4m-36 1h5m1 0h2m1 0h1m1 0h1m3 0h1m2 0h3m1 0h2m2 0h1m1 0h2m2 0h1m1 0h2m-37 1h1m1 0h1m3 0h1m3 0h1m1 0h1m1 0h3m2 0h1m2 0h1m3 0h4m2 0h1m2 0h2m-37 1h6m5 0h2m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-36 1h2m1 0h1m1 0h2m3 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h2m3 0h1m-34 1h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m1 0h3m1 0h2m1 0h1m2 0h1m4 0h1m-34 1h2m2 0h1m1 0h1m1 0h3m1 0h1m3 0h2m3 0h5m3 0h3m-32 1h1m2 0h1m3 0h1m3 0h1m2 0h1m1 0h1m1 0h2m1 0h5m1 0h1m4 0h5m-36 1h1m1 0h1m1 0h2m1 0h1m3 0h1m5 0h1m1 0h7m2 0h2m1 0h1m1 0h2m-35 1h3m1 0h1m1 0h5m4 0h3m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h2m-36 1h6m1 0h1m2 0h2m2 0h2m1 0h5m2 0h2m1 0h1m4 0h1m1 0h1m-36 1h1m3 0h1m3 0h1m1 0h1m1 0h2m2 0h1m4 0h1m1 0h2m1 0h1m2 0h4m-30 1h1m1 0h3m1 0h1m2 0h4m2 0h1m1 0h4m1 0h2m1 0h5m1 0h2m-28 1h2m1 0h5m1 0h2m1 0h1m1 0h4m2 0h1m3 0h1m1 0h3m-37 1h7m1 0h3m4 0h3m2 0h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m1 0h3m6 0h1m2 0h1m3 0h1m1 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m2 0h2m1 0h1m5 0h1m3 0h1m3 0h1m1 0h6m-34 1h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h1m2 0h1m1 0h4m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h2m2 0h5m1 0h4m2 0h1m1 0h1m1 0h3m-35 1h1m5 0h1m3 0h2m2 0h1m1 0h1m3 0h1m4 0h1m1 0h1m1 0h1m1 0h4m-35 1h7m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h5"/></svg></div>
+      <p class="scan">📷 Point your phone camera here to install</p>
+    </div>
+
+    <div class="actions">
+      <a class="play" href="https://play.google.com/store/apps/details?id=com.luxtradita.tibet" target="_blank" rel="noopener">
+        <span class="pbadge" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="#34A853" d="M3.6 2.3 13.4 12 3.6 21.7c-.3-.2-.5-.6-.5-1V3.3c0-.4.2-.8.5-1z" opacity=".0"/><path fill="#EA4335" d="M14.9 10.5 4.6 4.6 3.9 4.2c-.2-.1-.5-.2-.7-.1L13.4 12z"/><path fill="#FBBC04" d="M18.9 9.2 15.7 7.4 13.4 12l2.3 4.6 3.2-1.8c.9-.5.9-1.8 0-2.3z" transform="translate(0,-.4)"/><path fill="#34A853" d="M3.2 4.1c-.1.2-.1.4-.1.6v14.6c0 .2 0 .4.1.6L13.4 12z"/><path fill="#4285F4" d="M13.4 12 3.2 20.5c.2.3.6.3.9.1l11.6-6.6z"/></svg></span>
+        <span class="lbl"><small>Get it on</small><b>Google Play</b></span>
+      </a>
+      <button class="copy" type="button" id="copyBtn">🔗 Copy link to share</button>
+    </div>
+
+    <p class="pkg">com.luxtradita.tibet</p>
+    <p class="terms">Free 7-day trial, then $3.99/month · cancel anytime</p>
+
+    <div class="links">
+      <a href="/apps/tibet-app/">How to use</a>
+      <a href="/get/">All nine apps</a>
+      <a href="/apps/privacy/">Privacy</a>
+      <a href="mailto:support@luxtradita.com">Support</a>
+    </div>
+    <p class="foot"><b>Lux Tradita</b> · nine skies, one family</p>
+  </main>
+
+<script>
+  var URL_ = "https://play.google.com/store/apps/details?id=com.luxtradita.tibet";
+  var btn = document.getElementById("copyBtn");
+  btn.addEventListener("click", function(){
+    (navigator.clipboard ? navigator.clipboard.writeText(URL_) : Promise.reject())
+      .then(function(){ btn.textContent="✓ Link copied"; btn.classList.add("ok"); })
+      .catch(function(){ btn.textContent="Press ⌘/Ctrl+C to copy"; });
+    setTimeout(function(){ btn.textContent="🔗 Copy link to share"; btn.classList.remove("ok"); }, 1600);
+  });
+</script>
+</body>
+</html>

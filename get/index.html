@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get the Apps · Lux Tradita</title>
+<meta name="description" content="Nine traditions of the sky, free on Google Play. Scan a code or tap to install. 7-day free trial, then $3.99/month.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="Lux Tradita — nine skies, in your pocket">
+<meta property="og:description" content="Nine traditions of the sky, free on Google Play. Scan or tap to install.">
+<meta property="og:url" content="https://luxtradita.com/get/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#F3EEE2; --surface:#FBF8F0; --border:#E3DAC6;
+    --text:#242138; --muted:#6E6A84; --accent:#9C6F1E; --hair:rgba(156,111,30,.30);
+    --shadow:0 1px 2px rgba(30,26,60,.05), 0 14px 34px -22px rgba(30,26,60,.4);
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0C0B16; --surface:#16142A; --border:#2A2647;
+      --text:#ECE7DA; --muted:#9C99B4; --accent:#E4B44C; --hair:rgba(228,180,76,.28);
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 20px 46px -26px rgba(0,0,0,.75);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0C0B16; --surface:#16142A; --border:#2A2647;
+    --text:#ECE7DA; --muted:#9C99B4; --accent:#E4B44C; --hair:rgba(228,180,76,.28);
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 20px 46px -26px rgba(0,0,0,.75);
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans);
+    line-height:1.5; padding-block:0 56px; padding-inline:20px; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px; margin:0 auto}
+  header.site{text-align:center; padding-block:48px 30px; border-bottom:1px solid var(--hair); margin-bottom:32px}
+  .mark{font-family:var(--serif); font-weight:500; letter-spacing:.14em; font-size:12px;
+    text-transform:uppercase; color:var(--accent); display:inline-flex; gap:.7em; align-items:center}
+  .mark::before,.mark::after{content:"✦"; font-size:9px; opacity:.85}
+  h1{font-family:var(--serif); font-weight:400; font-size:clamp(2.4rem,6vw,3.8rem); line-height:1.02;
+    margin:.3em 0 .12em; text-wrap:balance; letter-spacing:-.01em}
+  h1 em{font-style:italic; color:var(--accent)}
+  .lede{color:var(--muted); font-size:1.02rem; max-width:52ch; margin:0 auto; text-wrap:balance}
+  .grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+  .card{background:var(--surface); border:1px solid var(--border); border-radius:20px;
+    padding:22px 20px 18px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:14px;
+    transition:transform .18s ease, border-color .18s ease}
+  .card:hover{transform:translateY(-3px); border-color:var(--accent)}
+  .card-link{text-decoration:none; color:inherit; display:block; text-align:center}
+  .cemblem{width:52px; height:52px; margin:0 auto; border-radius:14px; background:var(--bg);
+    border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
+    color:var(--accent); font-size:26px}
+  .cname{font-family:var(--serif); font-weight:500; font-size:1.5rem; line-height:1.05; margin:12px 0 0}
+  .ctrad{margin:4px 0 0; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--accent); font-weight:600}
+  .cqr{background:#FBF7EE; border-radius:12px; padding:12px; align-self:center; line-height:0;
+    width:172px; height:172px; box-shadow:inset 0 0 0 1px rgba(20,21,43,.06)}
+  .cqr svg{display:block; width:100%; height:100%}
+  .cact{display:flex; gap:8px; margin-top:auto}
+  a.cplay{flex:1; text-align:center; text-decoration:none; font-size:.84rem; font-weight:600;
+    background:var(--accent); color:#181203; border-radius:10px; padding:9px 10px;
+    border:1px solid transparent; transition:filter .15s ease}
+  a.cplay:hover{filter:brightness(1.07)}
+  a.cpage{text-align:center; text-decoration:none; font-size:.84rem; font-weight:600;
+    color:var(--text); border:1px solid var(--border); border-radius:10px; padding:9px 12px}
+  a.cpage:hover{border-color:var(--accent); color:var(--accent)}
+  footer.site{text-align:center; margin-top:38px; padding-top:22px; border-top:1px solid var(--hair);
+    color:var(--muted); font-size:.84rem}
+  footer.site a{color:var(--muted); font-weight:600; text-decoration:none}
+  footer.site a:hover{color:var(--accent)}
+  footer.site b{color:var(--text); font-weight:600}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:6px}
+  @media (max-width:520px){.grid{grid-template-columns:1fr 1fr; gap:14px} .card{padding:16px 14px 14px}
+    .cqr{width:140px; height:140px; padding:10px}}
+  @media (max-width:380px){.grid{grid-template-columns:1fr}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <span class="mark">Lux&nbsp;Tradita</span>
+      <h1>Nine skies, <em>in your pocket</em></h1>
+      <p class="lede">Nine living traditions of the sky, free on Google Play. Scan a code with your phone camera, or tap Google&nbsp;Play. Every app is free to try for 7 days, then $3.99/month.</p>
+    </header>
+    <main class="grid">
+      <article class="card" style="--accent:#E0B54A">
+        <a class="card-link" href="/duat/">
+          <div class="cemblem">☥</div>
+          <h2 class="cname">Duat</h2>
+          <p class="ctrad">Egyptian Sky &amp; Decans</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h1m1 0h2m1 0h1m1 0h1m3 0h2m6 0h2m1 0h7m-37 1h1m5 0h1m2 0h1m1 0h1m5 0h3m1 0h1m1 0h2m3 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m2 0h2m2 0h2m2 0h1m2 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m1 0h1m3 0h1m3 0h3m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h1m2 0h2m3 0h2m1 0h4m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h2m2 0h3m1 0h2m4 0h1m2 0h1m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m1 0h3m7 0h1m2 0h1m-25 1h1m3 0h1m1 0h7m2 0h2m2 0h2m2 0h2m2 0h1m1 0h5m2 0h1m-37 1h3m1 0h2m2 0h1m2 0h3m3 0h3m2 0h1m1 0h6m2 0h2m1 0h1m-36 1h1m5 0h1m1 0h2m2 0h4m2 0h2m1 0h1m1 0h1m1 0h5m3 0h2m-35 1h1m1 0h1m1 0h1m2 0h2m1 0h1m3 0h10m2 0h2m1 0h1m1 0h5m-36 1h1m3 0h4m2 0h5m1 0h2m3 0h2m1 0h1m4 0h2m2 0h4m-37 1h1m1 0h2m1 0h1m4 0h2m3 0h2m1 0h1m2 0h1m1 0h6m3 0h2m-34 1h2m1 0h2m1 0h2m2 0h1m2 0h5m5 0h2m2 0h1m3 0h4m-33 1h3m2 0h2m2 0h2m1 0h2m1 0h2m3 0h3m1 0h1m4 0h2m1 0h1m-34 1h1m4 0h1m1 0h5m1 0h2m2 0h2m2 0h3m1 0h1m2 0h3m1 0h2m-35 1h4m1 0h1m3 0h1m2 0h3m1 0h1m2 0h3m2 0h1m1 0h4m2 0h4m-35 1h1m2 0h1m1 0h4m1 0h1m4 0h3m1 0h1m2 0h1m2 0h2m2 0h1m1 0h1m1 0h1m-34 1h1m5 0h1m1 0h2m6 0h1m3 0h1m1 0h2m2 0h3m1 0h2m1 0h2m-36 1h5m1 0h2m2 0h1m4 0h1m1 0h1m1 0h1m1 0h2m1 0h1m4 0h3m2 0h1m-30 1h1m5 0h2m2 0h4m3 0h2m2 0h3m2 0h2m-30 1h1m2 0h1m3 0h1m1 0h4m2 0h1m1 0h15m-35 1h1m2 0h1m1 0h1m1 0h1m2 0h3m2 0h2m4 0h1m2 0h1m4 0h1m1 0h2m1 0h1m1 0h1m-36 1h1m1 0h4m1 0h1m6 0h2m2 0h2m2 0h1m3 0h1m1 0h3m1 0h3m-36 1h1m1 0h2m3 0h1m1 0h2m1 0h1m1 0h1m3 0h2m2 0h2m1 0h5m1 0h2m-27 1h4m3 0h3m1 0h3m2 0h3m1 0h4m1 0h1m-30 1h1m1 0h1m6 0h1m3 0h9m2 0h1m1 0h1m2 0h2m1 0h1m-35 1h3m3 0h2m2 0h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m-29 1h1m5 0h3m4 0h1m1 0h1m1 0h2m1 0h1m3 0h1m2 0h1m-36 1h7m1 0h1m2 0h2m2 0h1m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-36 1h1m5 0h1m3 0h1m3 0h7m1 0h1m4 0h2m3 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m3 0h1m3 0h1m1 0h1m3 0h7m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h2m4 0h1m2 0h2m2 0h1m3 0h1m1 0h3m1 0h2m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h3m1 0h1m1 0h3m1 0h2m1 0h5m2 0h1m-31 1h1m5 0h1m3 0h2m2 0h1m2 0h1m3 0h1m1 0h2m7 0h1m1 0h2m-36 1h7m1 0h4m3 0h1m1 0h1m1 0h3m2 0h1m2 0h1m2 0h2m2 0h3"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.duat" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/duat/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#E38A34">
+        <a class="card-link" href="/vedic/">
+          <div class="cemblem">ॐ</div>
+          <h2 class="cname">Vedic Sky</h2>
+          <p class="ctrad">Jyotish Astrology</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h1m5 0h1m1 0h1m1 0h2m4 0h1m2 0h2m1 0h7m-37 1h1m5 0h1m3 0h9m1 0h2m2 0h1m3 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h7m1 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m4 0h3m3 0h2m2 0h4m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h3m1 0h4m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h2m1 0h1m1 0h4m1 0h5m2 0h1m2 0h1m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m3 0h2m2 0h3m3 0h1m1 0h1m-25 1h1m3 0h1m1 0h6m2 0h1m3 0h2m2 0h3m2 0h1m1 0h5m2 0h1m-33 1h2m6 0h1m3 0h2m1 0h2m3 0h6m2 0h2m1 0h1m-36 1h2m4 0h1m1 0h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h7m3 0h2m-35 1h1m1 0h1m1 0h2m2 0h1m1 0h2m2 0h1m2 0h2m2 0h2m3 0h2m1 0h1m1 0h5m-35 1h3m1 0h5m2 0h1m1 0h4m1 0h1m1 0h2m1 0h1m4 0h2m2 0h4m-37 1h1m4 0h1m6 0h2m1 0h4m4 0h6m3 0h2m-34 1h3m2 0h3m1 0h4m1 0h3m1 0h1m2 0h4m2 0h1m3 0h4m-34 1h1m3 0h1m2 0h1m1 0h1m4 0h1m5 0h1m1 0h2m1 0h1m4 0h2m1 0h1m-35 1h1m3 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h2m2 0h2m2 0h2m1 0h1m2 0h3m1 0h2m-35 1h1m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1m3 0h2m1 0h3m2 0h4m2 0h4m-32 1h3m4 0h2m1 0h2m1 0h3m3 0h2m1 0h2m2 0h1m1 0h1m1 0h1m-35 1h4m1 0h1m1 0h1m1 0h3m3 0h3m1 0h3m1 0h1m3 0h3m1 0h2m1 0h2m-35 1h6m1 0h1m5 0h1m2 0h1m3 0h4m4 0h3m2 0h1m-35 1h3m1 0h2m1 0h1m3 0h1m3 0h2m1 0h1m2 0h3m2 0h3m2 0h2m-32 1h3m1 0h2m2 0h2m1 0h1m1 0h2m1 0h1m2 0h1m2 0h12m-34 1h1m3 0h1m3 0h1m4 0h5m3 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h1m-37 1h3m1 0h4m1 0h1m3 0h1m1 0h1m2 0h2m2 0h3m2 0h1m1 0h3m1 0h3m-36 1h1m2 0h1m3 0h1m1 0h1m3 0h1m2 0h1m2 0h2m2 0h1m1 0h1m1 0h3m1 0h2m-31 1h3m1 0h2m1 0h1m2 0h2m2 0h3m1 0h1m1 0h2m2 0h4m1 0h1m-30 1h1m2 0h1m1 0h1m4 0h2m3 0h2m2 0h4m1 0h1m1 0h1m2 0h2m1 0h3m-37 1h2m1 0h1m2 0h2m1 0h1m4 0h2m1 0h1m1 0h4m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m-29 1h4m3 0h3m5 0h1m1 0h2m1 0h1m3 0h1m2 0h1m-36 1h7m1 0h1m1 0h3m2 0h1m2 0h1m1 0h7m1 0h1m1 0h1m1 0h1m2 0h1m-36 1h1m5 0h1m3 0h3m2 0h2m2 0h3m5 0h2m3 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m5 0h1m3 0h1m3 0h1m3 0h7m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m3 0h2m2 0h2m2 0h2m1 0h3m1 0h2m1 0h1m-37 1h1m1 0h3m1 0h1m6 0h3m1 0h3m1 0h1m1 0h5m2 0h1m-31 1h1m5 0h1m2 0h9m1 0h3m1 0h2m7 0h1m1 0h2m-36 1h7m1 0h5m1 0h1m2 0h1m2 0h2m2 0h1m2 0h1m2 0h2m2 0h3"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.vedic" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/vedic/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#34A79E">
+        <a class="card-link" href="/falak/">
+          <div class="cemblem">☾</div>
+          <h2 class="cname">Falak</h2>
+          <p class="ctrad">Islamic Astrolabe</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h3m6 0h3m1 0h4m5 0h7m-37 1h1m5 0h1m1 0h1m1 0h2m1 0h6m1 0h2m2 0h1m3 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h1m3 0h2m2 0h5m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h1m2 0h2m3 0h3m1 0h1m3 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h2m1 0h3m2 0h1m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m6 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h1m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-27 1h2m1 0h3m3 0h3m1 0h1m1 0h4m-29 1h1m2 0h6m1 0h2m3 0h2m1 0h4m1 0h2m1 0h1m1 0h2m2 0h1m1 0h3m-36 1h2m5 0h1m3 0h2m3 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h5m-35 1h1m1 0h2m1 0h2m1 0h2m10 0h3m1 0h1m1 0h1m1 0h2m1 0h2m2 0h1m-34 1h3m1 0h1m1 0h2m1 0h1m1 0h2m1 0h1m4 0h1m1 0h1m1 0h1m2 0h4m1 0h3m-36 1h2m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m4 0h1m4 0h1m2 0h2m1 0h1m5 0h1m-32 1h1m6 0h2m1 0h4m4 0h6m3 0h2m-32 1h1m3 0h1m2 0h2m4 0h3m1 0h1m1 0h2m2 0h1m1 0h1m1 0h2m1 0h5m-37 1h4m7 0h2m1 0h1m2 0h2m1 0h1m6 0h1m1 0h3m1 0h4m-34 1h1m2 0h3m1 0h2m1 0h2m1 0h2m2 0h2m2 0h4m2 0h1m3 0h2m-36 1h1m2 0h3m2 0h1m2 0h1m1 0h1m2 0h3m1 0h2m3 0h1m1 0h1m3 0h1m1 0h1m-34 1h2m2 0h4m4 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h1m3 0h1m2 0h1m1 0h1m-33 1h1m2 0h2m2 0h4m3 0h1m3 0h1m1 0h3m3 0h1m2 0h1m2 0h1m-36 1h2m2 0h3m1 0h2m4 0h3m2 0h1m3 0h1m1 0h8m-32 1h1m1 0h2m4 0h2m3 0h1m2 0h2m1 0h1m1 0h1m1 0h3m4 0h1m1 0h1m-34 1h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h1m1 0h4m3 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m-37 1h2m1 0h3m3 0h1m2 0h1m3 0h2m3 0h2m4 0h1m1 0h6m-34 1h7m1 0h3m1 0h1m2 0h4m1 0h1m2 0h1m3 0h1m1 0h2m-32 1h3m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h2m2 0h1m1 0h5m1 0h2m-33 1h3m1 0h4m1 0h1m2 0h1m3 0h1m2 0h2m1 0h1m1 0h5m1 0h1m4 0h2m-37 1h1m7 0h2m3 0h3m4 0h1m1 0h1m4 0h5m1 0h2m-35 1h1m4 0h3m3 0h1m1 0h2m5 0h1m1 0h1m1 0h13m-29 1h1m5 0h2m3 0h2m1 0h1m5 0h1m3 0h1m1 0h1m-35 1h7m1 0h2m1 0h1m1 0h3m3 0h1m1 0h3m4 0h1m1 0h1m1 0h1m2 0h2m-37 1h1m5 0h1m1 0h3m2 0h1m3 0h2m3 0h5m1 0h1m3 0h1m2 0h1m-36 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m5 0h2m1 0h1m1 0h7m3 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m4 0h1m1 0h6m2 0h1m2 0h1m-37 1h1m1 0h3m1 0h1m3 0h4m1 0h3m1 0h5m1 0h1m1 0h2m3 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m3 0h1m2 0h2m1 0h5m2 0h2m2 0h1m2 0h1m1 0h5m-37 1h7m1 0h1m2 0h2m1 0h3m3 0h1m1 0h3m3 0h4m1 0h1m2 0h1"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.falak" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/falak/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#5B8DD6">
+        <a class="card-link" href="/moira/">
+          <div class="cemblem">✶</div>
+          <h2 class="cname">Moira</h2>
+          <p class="ctrad">Hellenistic Astrology</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h4m1 0h4m1 0h1m1 0h2m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m1 0h1m1 0h1m3 0h1m4 0h3m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h4m1 0h2m1 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h9m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h3m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m4 0h2m1 0h2m3 0h1m1 0h1m2 0h3m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m2 0h1m1 0h2m1 0h2m1 0h2m2 0h1m1 0h3m-29 1h1m1 0h2m1 0h3m1 0h4m1 0h1m1 0h1m2 0h2m2 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-35 1h4m2 0h4m1 0h5m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m-36 1h5m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m3 0h4m3 0h1m2 0h1m-33 1h5m2 0h1m1 0h2m2 0h3m2 0h2m2 0h1m2 0h2m5 0h1m1 0h1m-33 1h1m2 0h2m5 0h2m2 0h2m2 0h1m1 0h1m1 0h4m1 0h4m1 0h3m-36 1h1m2 0h1m2 0h1m1 0h1m1 0h1m3 0h2m2 0h1m6 0h8m1 0h2m-37 1h5m1 0h1m3 0h1m1 0h1m1 0h1m1 0h4m2 0h1m1 0h2m3 0h1m2 0h1m1 0h2m-36 1h2m6 0h1m2 0h2m1 0h5m2 0h2m3 0h1m1 0h5m2 0h2m-37 1h1m2 0h5m1 0h4m2 0h4m1 0h1m4 0h2m6 0h4m-36 1h1m2 0h1m2 0h1m2 0h3m1 0h1m1 0h1m2 0h3m1 0h2m2 0h1m1 0h2m2 0h1m1 0h2m-37 1h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h3m2 0h1m2 0h1m1 0h1m1 0h4m2 0h1m2 0h2m-37 1h6m1 0h1m4 0h1m1 0h1m2 0h1m1 0h1m2 0h1m3 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-36 1h2m1 0h1m1 0h2m3 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h2m3 0h1m-34 1h3m2 0h1m2 0h1m1 0h2m1 0h1m1 0h3m1 0h2m1 0h1m2 0h1m4 0h1m-33 1h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m3 0h5m3 0h3m-31 1h1m1 0h3m1 0h1m2 0h2m2 0h1m1 0h1m1 0h2m1 0h5m1 0h1m4 0h5m-33 1h1m1 0h1m1 0h2m2 0h1m5 0h1m1 0h4m1 0h2m2 0h2m1 0h1m1 0h2m-35 1h1m6 0h2m1 0h1m4 0h3m1 0h1m3 0h1m1 0h3m1 0h1m1 0h1m2 0h2m-36 1h1m1 0h6m2 0h2m2 0h2m1 0h5m1 0h3m1 0h1m4 0h1m1 0h1m-36 1h1m3 0h1m2 0h1m2 0h1m2 0h1m2 0h1m4 0h1m2 0h1m1 0h1m2 0h4m-31 1h2m1 0h3m1 0h1m2 0h4m2 0h1m1 0h3m2 0h2m1 0h5m1 0h2m-28 1h1m2 0h2m1 0h2m1 0h2m1 0h1m1 0h3m3 0h1m3 0h1m1 0h3m-37 1h7m1 0h3m4 0h3m2 0h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h2m1 0h2m1 0h1m4 0h1m2 0h1m5 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m2 0h2m3 0h1m3 0h1m3 0h1m1 0h6m-34 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h4m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h5m1 0h4m2 0h1m1 0h1m1 0h3m-35 1h1m5 0h1m3 0h1m3 0h1m1 0h1m3 0h1m2 0h3m1 0h1m1 0h1m1 0h4m-35 1h7m1 0h1m1 0h4m1 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.moira" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/moira/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#7E86DE">
+        <a class="card-link" href="/mazal/">
+          <div class="cemblem">✡</div>
+          <h2 class="cname">Mazal</h2>
+          <p class="ctrad">Kabbalistic Astrology</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h2m3 0h2m3 0h1m1 0h2m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h3m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h2m4 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h5m1 0h5m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h3m1 0h2m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m4 0h2m1 0h2m3 0h1m1 0h1m2 0h3m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m2 0h4m1 0h2m1 0h2m2 0h1m1 0h3m-29 1h1m1 0h2m1 0h3m2 0h2m2 0h1m1 0h1m2 0h2m2 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-36 1h1m2 0h1m2 0h1m1 0h2m2 0h1m1 0h3m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m-36 1h2m2 0h1m1 0h2m2 0h2m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m2 0h1m-33 1h2m2 0h1m4 0h7m2 0h2m2 0h1m1 0h3m5 0h1m1 0h1m-30 1h2m5 0h2m2 0h2m2 0h1m1 0h6m1 0h4m1 0h3m-36 1h1m2 0h1m2 0h1m3 0h1m3 0h2m2 0h1m6 0h8m1 0h2m-37 1h1m1 0h2m2 0h1m2 0h2m1 0h2m2 0h4m2 0h1m1 0h2m3 0h1m2 0h1m1 0h2m-35 1h1m6 0h6m1 0h4m2 0h2m3 0h1m1 0h5m2 0h2m-36 1h1m1 0h1m1 0h8m2 0h4m1 0h1m4 0h2m6 0h4m-36 1h2m1 0h2m5 0h2m3 0h1m2 0h3m1 0h2m2 0h1m1 0h2m2 0h1m1 0h2m-37 1h1m2 0h1m2 0h3m1 0h3m1 0h3m2 0h1m2 0h1m3 0h4m2 0h1m2 0h2m-37 1h3m1 0h2m2 0h1m5 0h1m2 0h1m1 0h1m2 0h2m2 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-36 1h4m1 0h3m2 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h2m3 0h1m-34 1h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m1 0h3m1 0h2m1 0h1m2 0h1m4 0h1m-34 1h1m4 0h2m1 0h1m1 0h1m1 0h1m3 0h2m3 0h5m3 0h3m-32 1h1m2 0h1m3 0h1m3 0h1m1 0h2m1 0h1m1 0h2m1 0h5m1 0h1m4 0h5m-37 1h1m2 0h2m1 0h1m2 0h2m3 0h1m3 0h1m1 0h7m2 0h2m1 0h1m1 0h2m-35 1h1m3 0h1m1 0h1m1 0h4m1 0h1m1 0h3m1 0h1m3 0h1m1 0h3m1 0h1m1 0h1m2 0h2m-36 1h6m1 0h1m2 0h2m2 0h2m1 0h5m2 0h2m1 0h1m4 0h1m1 0h1m-36 1h1m3 0h1m5 0h1m1 0h2m2 0h1m4 0h1m1 0h2m1 0h1m2 0h4m-31 1h2m1 0h2m2 0h1m2 0h4m2 0h1m1 0h3m2 0h2m1 0h5m1 0h2m-28 1h2m1 0h2m1 0h2m1 0h2m1 0h1m1 0h3m3 0h1m3 0h1m1 0h3m-37 1h7m1 0h2m4 0h4m2 0h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h3m5 0h1m2 0h1m5 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m3 0h1m3 0h1m3 0h1m1 0h1m1 0h1m1 0h6m-34 1h1m1 0h3m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h4m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h2m2 0h5m1 0h4m2 0h1m1 0h1m1 0h3m-35 1h1m5 0h1m3 0h3m1 0h1m1 0h1m3 0h1m4 0h1m1 0h1m1 0h1m1 0h4m-35 1h7m1 0h1m1 0h4m1 0h1m1 0h1m1 0h1m4 0h3m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.mazal" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/mazal/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#CF5A3C">
+        <a class="card-link" href="/rabjung/">
+          <div class="cemblem">☸</div>
+          <h2 class="cname">Rabjung</h2>
+          <p class="ctrad">Tibetan Astrology</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h7m3 0h1m1 0h2m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h2m1 0h2m1 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h5m1 0h5m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m3 0h2m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m3 0h6m3 0h1m1 0h1m2 0h3m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m1 0h1m1 0h4m1 0h2m1 0h2m2 0h1m1 0h3m-29 1h1m1 0h2m1 0h3m3 0h4m1 0h1m2 0h2m2 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-35 1h1m1 0h1m4 0h1m1 0h7m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m-36 1h2m1 0h2m1 0h1m3 0h1m4 0h1m2 0h1m3 0h2m1 0h1m3 0h1m2 0h1m-33 1h2m1 0h2m4 0h7m2 0h2m2 0h1m1 0h3m5 0h1m1 0h1m-30 1h3m4 0h2m2 0h2m2 0h1m1 0h1m1 0h4m1 0h4m1 0h3m-36 1h1m2 0h1m2 0h1m3 0h1m1 0h1m1 0h2m2 0h1m6 0h8m1 0h2m-37 1h5m1 0h1m3 0h1m1 0h1m3 0h4m2 0h1m1 0h2m3 0h1m2 0h1m1 0h2m-35 1h1m2 0h2m2 0h11m2 0h2m3 0h1m1 0h5m2 0h2m-33 1h5m1 0h4m1 0h4m1 0h1m3 0h3m6 0h4m-36 1h5m1 0h2m1 0h1m1 0h1m3 0h1m2 0h3m1 0h2m2 0h1m1 0h2m2 0h1m1 0h2m-37 1h1m1 0h1m3 0h1m3 0h1m1 0h1m1 0h3m2 0h1m2 0h1m3 0h4m2 0h1m2 0h2m-37 1h6m5 0h2m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-36 1h2m1 0h1m1 0h2m3 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h2m3 0h1m-34 1h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1m1 0h3m1 0h2m1 0h1m2 0h1m4 0h1m-34 1h2m2 0h1m1 0h1m1 0h3m1 0h1m3 0h2m3 0h5m3 0h3m-32 1h1m2 0h1m3 0h1m3 0h1m2 0h1m1 0h1m1 0h2m1 0h5m1 0h1m4 0h5m-36 1h1m1 0h1m1 0h2m1 0h1m3 0h1m5 0h1m1 0h7m2 0h2m1 0h1m1 0h2m-35 1h3m1 0h1m1 0h5m4 0h3m1 0h1m3 0h1m2 0h2m1 0h1m1 0h1m2 0h2m-36 1h6m1 0h1m2 0h2m2 0h2m1 0h5m2 0h2m1 0h1m4 0h1m1 0h1m-36 1h1m3 0h1m3 0h1m1 0h1m1 0h2m2 0h1m4 0h1m1 0h2m1 0h1m2 0h4m-30 1h1m1 0h3m1 0h1m2 0h4m2 0h1m1 0h4m1 0h2m1 0h5m1 0h2m-28 1h2m1 0h5m1 0h2m1 0h1m1 0h4m2 0h1m3 0h1m1 0h3m-37 1h7m1 0h3m4 0h3m2 0h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m1 0h3m6 0h1m2 0h1m3 0h1m1 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m2 0h2m1 0h1m5 0h1m3 0h1m3 0h1m1 0h6m-34 1h1m1 0h3m1 0h1m1 0h1m3 0h2m1 0h1m2 0h1m1 0h4m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h2m2 0h5m1 0h4m2 0h1m1 0h1m1 0h3m-35 1h1m5 0h1m3 0h2m2 0h1m1 0h1m3 0h1m4 0h1m1 0h1m1 0h1m1 0h4m-35 1h7m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.tibet" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/rabjung/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#46A07C">
+        <a class="card-link" href="/daoist/">
+          <div class="cemblem">☯</div>
+          <h2 class="cname">Daoist Way</h2>
+          <p class="ctrad">I Ching &amp; Ba Zi</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m3 0h2m4 0h1m4 0h1m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m3 0h5m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h5m2 0h1m5 0h2m3 0h2m2 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h12m4 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h3m3 0h1m3 0h1m4 0h3m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m4 0h1m-29 1h1m1 0h5m2 0h1m1 0h4m1 0h1m4 0h1m1 0h1m1 0h2m3 0h5m-34 1h5m1 0h2m1 0h1m4 0h1m1 0h2m1 0h2m1 0h1m4 0h2m1 0h1m3 0h1m-34 1h5m4 0h2m1 0h4m1 0h1m1 0h2m2 0h3m2 0h1m2 0h1m1 0h2m-33 1h1m2 0h1m2 0h3m2 0h1m3 0h3m1 0h2m1 0h3m1 0h4m2 0h1m-37 1h1m3 0h1m1 0h1m1 0h4m1 0h5m1 0h2m1 0h1m1 0h4m1 0h4m1 0h3m-37 1h2m3 0h1m6 0h2m2 0h1m1 0h3m2 0h2m3 0h1m2 0h1m-31 1h1m1 0h2m1 0h1m1 0h3m4 0h1m2 0h1m3 0h1m4 0h7m1 0h2m-37 1h1m2 0h2m3 0h1m1 0h1m1 0h1m1 0h3m9 0h1m1 0h5m2 0h2m-32 1h4m1 0h5m3 0h1m1 0h4m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m-35 1h2m2 0h1m2 0h2m3 0h1m1 0h3m6 0h1m1 0h1m2 0h2m1 0h1m2 0h2m-33 1h1m1 0h2m3 0h1m1 0h3m5 0h1m1 0h1m3 0h4m2 0h1m2 0h2m-37 1h1m3 0h1m4 0h4m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h3m3 0h1m-35 1h1m3 0h1m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h6m1 0h2m1 0h3m-34 1h2m5 0h1m1 0h1m1 0h1m3 0h8m1 0h1m2 0h1m4 0h1m-32 1h2m1 0h2m2 0h1m1 0h7m2 0h2m3 0h3m3 0h3m1 0h2m-37 1h2m1 0h3m1 0h2m2 0h1m2 0h2m1 0h2m2 0h3m4 0h1m1 0h3m2 0h1m-32 1h1m1 0h1m4 0h1m1 0h2m1 0h1m4 0h1m1 0h4m2 0h2m1 0h1m1 0h2m-36 1h2m3 0h1m1 0h1m1 0h2m1 0h1m2 0h1m2 0h1m1 0h4m4 0h2m3 0h1m-34 1h1m4 0h2m6 0h4m2 0h1m6 0h2m2 0h2m2 0h3m-37 1h1m1 0h1m1 0h2m5 0h1m1 0h1m1 0h1m3 0h3m1 0h1m2 0h1m2 0h4m2 0h1m-36 1h1m1 0h6m1 0h3m2 0h2m1 0h1m1 0h1m2 0h4m1 0h8m1 0h1m-29 1h3m5 0h1m2 0h2m2 0h1m3 0h2m3 0h2m1 0h1m-36 1h7m2 0h3m3 0h2m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h1m1 0h3m3 0h2m2 0h2m2 0h2m3 0h2m1 0h1m-36 1h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m2 0h5m1 0h9m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h4m4 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h7m5 0h3m2 0h5m4 0h3m-37 1h1m5 0h1m2 0h4m3 0h1m1 0h1m2 0h2m1 0h1m3 0h3m1 0h1m3 0h1m-37 1h7m1 0h3m6 0h1m6 0h3m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.daoist" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/daoist/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#3E9E6E">
+        <a class="card-link" href="/maya/">
+          <div class="cemblem">⊙</div>
+          <h2 class="cname">Maya</h2>
+          <p class="ctrad">Cholq'ij Day Sign</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m2 0h4m3 0h1m4 0h1m3 0h2m1 0h1m1 0h7m-37 1h1m5 0h1m4 0h5m1 0h2m1 0h1m2 0h6m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m4 0h4m4 0h3m2 0h2m2 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h7m2 0h2m1 0h1m1 0h2m1 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m3 0h1m2 0h1m1 0h7m4 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h2m1 0h1m1 0h2m3 0h1m4 0h3m1 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h2m4 0h1m1 0h3m2 0h3m4 0h1m-29 1h1m1 0h5m2 0h1m1 0h1m1 0h2m1 0h1m4 0h1m1 0h4m3 0h5m-35 1h3m1 0h1m2 0h5m2 0h2m1 0h2m1 0h3m1 0h1m3 0h2m1 0h1m3 0h1m-33 1h5m1 0h3m1 0h5m1 0h1m1 0h2m1 0h4m2 0h1m2 0h1m1 0h2m-34 1h1m1 0h1m1 0h1m3 0h1m2 0h2m3 0h3m2 0h1m1 0h3m1 0h4m2 0h1m-37 1h2m1 0h10m2 0h3m1 0h2m1 0h1m1 0h4m1 0h4m1 0h3m-36 1h1m3 0h1m1 0h5m1 0h2m1 0h1m1 0h3m2 0h2m3 0h1m2 0h1m-32 1h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h2m2 0h1m3 0h1m4 0h7m1 0h2m-37 1h4m1 0h1m1 0h2m1 0h1m4 0h2m9 0h1m1 0h5m2 0h2m-36 1h2m1 0h8m1 0h2m3 0h1m1 0h6m1 0h1m1 0h2m1 0h1m1 0h1m-35 1h1m1 0h1m8 0h2m1 0h3m7 0h2m2 0h2m1 0h1m2 0h2m-36 1h4m1 0h2m1 0h3m1 0h1m7 0h1m1 0h1m3 0h4m2 0h1m2 0h2m-37 1h3m1 0h2m3 0h1m6 0h1m1 0h1m2 0h2m1 0h1m2 0h1m2 0h3m3 0h1m-37 1h1m3 0h1m1 0h1m1 0h4m1 0h2m2 0h1m2 0h1m1 0h1m1 0h4m1 0h2m1 0h3m-34 1h3m1 0h1m1 0h2m2 0h2m1 0h1m1 0h8m1 0h1m2 0h1m4 0h1m-31 1h1m2 0h1m3 0h2m1 0h1m1 0h3m2 0h2m3 0h3m3 0h3m1 0h2m-36 1h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h3m1 0h2m2 0h3m4 0h1m1 0h3m2 0h1m-34 1h3m1 0h2m1 0h2m5 0h1m4 0h1m1 0h4m2 0h2m1 0h1m1 0h2m-36 1h1m2 0h1m4 0h1m2 0h1m1 0h3m2 0h1m1 0h4m4 0h2m3 0h1m-34 1h1m1 0h1m1 0h7m1 0h5m2 0h1m6 0h2m2 0h2m2 0h3m-37 1h1m1 0h2m1 0h1m1 0h2m1 0h1m1 0h1m2 0h1m3 0h3m2 0h1m1 0h1m2 0h4m2 0h2m-37 1h1m1 0h2m2 0h1m1 0h6m1 0h1m1 0h1m1 0h1m2 0h4m1 0h8m1 0h1m-29 1h2m6 0h1m2 0h2m2 0h1m1 0h1m1 0h2m3 0h2m1 0h1m-36 1h7m8 0h2m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h6m1 0h1m3 0h2m2 0h2m1 0h3m3 0h2m1 0h1m-36 1h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h2m2 0h5m2 0h8m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h2m1 0h3m1 0h2m4 0h1m1 0h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m5 0h3m2 0h5m4 0h3m-37 1h1m5 0h1m4 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h1m3 0h3m1 0h1m3 0h1m-37 1h7m1 0h1m1 0h2m1 0h2m2 0h1m6 0h3m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.maya" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/maya/">Share page</a>
+        </div>
+      </article>
+      <article class="card" style="--accent:#2C9CB0">
+        <a class="card-link" href="/tonalli/">
+          <div class="cemblem">☼</div>
+          <h2 class="cname">Tonalli</h2>
+          <p class="ctrad">Aztec Day Sign</p>
+        </a>
+        <div class="cqr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" width="100%" height="100%" shape-rendering="crispEdges" role="img" aria-label="QR code" class="segno"><path fill="#fbf7ee" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#14152b" d="M2 2.5h7m1 0h2m2 0h2m1 0h1m2 0h1m1 0h2m2 0h3m1 0h1m1 0h7m-37 1h1m5 0h1m1 0h1m1 0h2m2 0h1m4 0h3m1 0h1m1 0h1m2 0h1m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h2m1 0h2m1 0h1m1 0h1m4 0h2m1 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h5m1 0h1m2 0h2m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m2 0h3m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m3 0h3m1 0h2m3 0h1m1 0h1m2 0h3m3 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h3m1 0h4m1 0h2m1 0h2m2 0h1m1 0h3m-29 1h1m1 0h2m1 0h3m3 0h2m3 0h1m2 0h2m2 0h1m2 0h3m1 0h1m2 0h1m1 0h2m-36 1h1m2 0h2m3 0h2m2 0h1m1 0h3m3 0h1m2 0h1m3 0h2m1 0h1m3 0h1m-36 1h2m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m3 0h4m3 0h1m2 0h1m-33 1h3m1 0h1m2 0h1m1 0h7m2 0h2m2 0h2m1 0h2m5 0h1m1 0h1m-33 1h1m2 0h3m4 0h2m2 0h2m2 0h1m1 0h1m1 0h4m1 0h4m1 0h3m-36 1h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h1m6 0h8m1 0h2m-37 1h1m1 0h2m1 0h2m5 0h3m1 0h4m2 0h1m1 0h2m3 0h1m2 0h1m1 0h2m-36 1h2m2 0h2m2 0h1m2 0h2m1 0h5m2 0h2m3 0h1m1 0h5m2 0h2m-37 1h1m3 0h1m1 0h2m1 0h1m1 0h1m2 0h5m1 0h1m4 0h2m6 0h4m-36 1h5m1 0h1m2 0h1m5 0h1m2 0h3m1 0h2m2 0h1m1 0h2m2 0h1m1 0h2m-37 1h1m5 0h1m1 0h1m1 0h3m1 0h3m2 0h1m2 0h1m3 0h4m2 0h1m2 0h2m-37 1h3m1 0h2m1 0h2m3 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m-36 1h4m1 0h3m2 0h1m1 0h1m3 0h3m1 0h2m4 0h1m1 0h2m1 0h2m3 0h1m-34 1h3m2 0h1m2 0h1m1 0h2m1 0h1m1 0h3m1 0h2m1 0h1m2 0h1m4 0h1m-28 1h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h2m3 0h5m3 0h3m-32 1h2m1 0h1m3 0h1m2 0h2m4 0h1m1 0h2m1 0h5m1 0h1m4 0h5m-37 1h2m4 0h1m1 0h1m3 0h2m4 0h1m1 0h7m2 0h2m1 0h1m1 0h2m-35 1h3m3 0h1m1 0h2m1 0h1m3 0h3m1 0h1m3 0h1m1 0h3m1 0h1m1 0h1m2 0h2m-36 1h1m1 0h4m1 0h1m2 0h2m2 0h2m1 0h5m2 0h2m1 0h1m4 0h1m1 0h1m-36 1h1m1 0h3m5 0h1m1 0h2m2 0h1m4 0h1m4 0h1m2 0h4m-31 1h2m1 0h2m2 0h1m2 0h4m2 0h1m1 0h4m1 0h2m1 0h5m1 0h2m-28 1h2m1 0h5m1 0h2m1 0h1m1 0h4m2 0h1m3 0h1m1 0h3m-37 1h7m1 0h1m4 0h1m1 0h3m2 0h2m6 0h1m1 0h1m1 0h1m1 0h1m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h4m4 0h1m2 0h1m5 0h1m3 0h1m3 0h1m-37 1h1m1 0h3m1 0h1m3 0h1m1 0h1m5 0h1m3 0h1m1 0h1m1 0h1m1 0h6m-34 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h4m2 0h1m1 0h4m1 0h2m2 0h2m1 0h1m1 0h1m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m2 0h5m1 0h2m1 0h1m2 0h1m1 0h1m1 0h3m-35 1h1m5 0h1m3 0h3m1 0h1m1 0h1m3 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h4m-35 1h7m1 0h1m1 0h4m1 0h1m1 0h1m1 0h1m3 0h4m3 0h1m1 0h5"/></svg></div>
+        <div class="cact">
+          <a class="cplay" href="https://play.google.com/store/apps/details?id=com.luxtradita.aztec" target="_blank" rel="noopener">Google Play ↗</a>
+          <a class="cpage" href="/tonalli/">Share page</a>
+        </div>
+      </article>
+    </main>
+    <footer class="site">
+      <b>Lux Tradita</b> · 9 apps live on Google Play · <a href="/apps/privacy/">Privacy</a> · <a href="mailto:support@luxtradita.com">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
